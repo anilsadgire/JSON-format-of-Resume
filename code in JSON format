@@ -1,0 +1,85 @@
+import json
+
+resume_text = """
+[Insert the resume text here]
+"""
+
+# Parsing logic (assume we extracted information into variables)
+data = {
+    "Name": "Anil Sadgire",
+    "Contact Information": {
+        "Phone": "7875239627",
+        "Email": "anil.sadgire20@vit.edu",
+        "LinkedIn": "https://www.linkedin.com/in/anil-sadgire/",
+        "Other links": ["https://www.hackerrank.com/anilsadgire20"]
+    },
+    "Education": [
+        {
+            "Degree": "B.Tech",
+            "Major": "Production Engg.",
+            "Institution": "Vishwakarma Institute of Technology, Pune",
+            "Years": "2020-2024",
+            "Specialization": "Software Development, Data Science"
+        }
+    ],
+    "Skills": {
+        "Languages": ["Java", "C/C++", "Python", "SQL", "PostgreSQL", "Kubernetes"],
+        "Technologies": ["GitHub", "Jakarta EE", "Git", "Spring Framework", "Statistics", "MySQL", "OOP’s", "Problem-solving"],
+        "Tech Stacks": ["Data Structure", "Algorithms", "DBMS", "Machine Learning", "Data Science", "Linux", "Data Analytics"],
+        "Soft skills": ["Leadership", "Decision-making", "Teamwork", "Creativity", "Strategic Thinking", "Project Management"]
+    },
+    "Experience": [
+        {
+            "Position": "Intern",
+            "Company": "Afame Technology",
+            "Duration": "Mar 2024 - May 2024",
+            "Responsibilities": [
+                "Created predictive models to forecast future outcomes, accurately aiding senior leadership’s decisions.",
+                "Streamlined data workflow by cleaning, transforming, and importing data into the company’s systems"
+            ],
+            "Tech Stack": ["Data Structure", "ML", "Algorithm", "GitHub", "Deep Learning", "Git Bash", "DS"]
+        },
+        {
+            "Position": "Machine Learning Intern",
+            "Company": "Bharat Intern",
+            "Duration": "Sep 2023 - Nov 2023",
+            "Responsibilities": [
+                "Worked on ANN, Keras, and Random Forest machine learning algorithms to make predictions",
+                "Worked in Quantitative and Risk team"
+            ],
+            "Tech Stack": ["Python", "Machine Learning", "Algorithm", "GitHub", "Deep Learning", "SciPy"]
+        },
+        {
+            "Position": "Data Science Intern",
+            "Company": "CodSoft Pune, India",
+            "Duration": "Sep 2023 - Oct 2023",
+            "Responsibilities": [
+                "Conducted Exploratory data analysis using large amounts of high-quality data as well as web scrapping.",
+                "Leveraged machine learning and statistical models to extract high-value insights and predictions."
+            ],
+            "Tech Stack": ["Data Science", "Algorithm", "Statistics", "Python", "EDA", "Web Scrapping"]
+        }
+    ],
+    "Projects": [
+        {
+            "Name": "Time Series Forecasting with ARIMA",
+            "Duration": "Aug 2022 - Dec 2022",
+            "Description": "Developed a Time Series Forecasting model that analyzes and models time-series data to make future decisions using the ARIMA statistical technique.",
+            "Tech Stack": ["Machine Learning", "Python", "ARIMA Algorithm", "Statistics"]
+        },
+        {
+            "Name": "Binary Tree implemented using Iterator pattern",
+            "Duration": "Jan 2024 - Mar 2024",
+            "Description": "Implemented traversal like Preorder, inorder, postorder, and breadth-first using the Iterator pattern.",
+            "Tech Stack": ["Software Development", "GitHub", "Unit Testing", "Java", "Data Structure", "Algorithm"]
+        }
+    ],
+    "Achievements": [
+        "Earned Golden Badge On HackerRank for Problem-solving",
+        "5 star On HackerRank"
+    ]
+}
+
+# Convert the data to JSON format
+resume_json = json.dumps(data, indent=4)
+print(resume_json)
