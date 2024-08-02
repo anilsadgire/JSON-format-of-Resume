@@ -1,1 +1,2 @@
-# I have developed JSON format of my resume using ChatGPT prompt that takes a resume as input and parses the content into a JSON format
+I have created JSON format of my resume using ChatGPT prompt that takes a resume as input and parses the content into a JSON format as a final outcome/solution.
+The provided code takes the resume content and extracts key information such as name, contact details, education, skills, experience, projects, and achievements. It then structures this information into a JSON object for easy parsing and manipulation.
